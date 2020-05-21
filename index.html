@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary text-center">
+        <a class="navbar-brand text-center" href="#">Weather Forecast</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center bg-info mt-2 p-5 rounded">
+            <h1 id="w-location"></h1>
+            <h3 class="text-dark" id="w-desc"></h3>
+            <h3 id="w-temp"></h3>
+            <img id="w-icon" src = "">
+            <ul id="w-details" class="list-group mt-3 text-center">
+              <li class="list-group-item list-group-item-action" id="w-humidity"></li>
+              <li class="list-group-item list-group-item-action" id="w-pressure"></li>
+              <li class="list-group-item list-group-item-action" id="w-feels-like"></li>
+              <li class="list-group-item list-group-item-action" id="w-wind"></li>
+              <li class="list-group-item list-group-item-action" id="w-tempMin"></li>
+              <li class="list-group-item list-group-item-action" id="w-tempMax"></li>
+            </ul>
+            <hr>
+            <form id="location-form">
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state" placeholder="Enter State..">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter City..">
+                </div>
+            </form>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-primary" id="change-location">
+                    Change Location
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="localstorage.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
